@@ -38,6 +38,29 @@ function checkRequired(inputArr) {
     }
   });
 }
+
+//check username is valid
+function checkUsername(input) {
+  const regex = /^[a-zA-Z]*$/;
+  /*if (input.value.length < 6) {
+    showError(
+      input,
+      `${getFieldName(input)} must be at least ${min} characters`
+    );
+  } else if (!regex.test(input.value)) {
+    showError(input, 'use only alphabetical characters');
+  } else if (input.value.length > 15) {
+    showError(input, `${getFieldName(input)} must be less than characters`);
+  } else {
+    showSuccess(input);
+  } */
+  if (regex.test(input.value)) {
+    showSuccess(input);
+  } else {
+    showError(input, 'use only alphabetical characters');
+  }
+}
+
 //check input length
 function checkLength(input, min, max) {
   if (input.value.length < min) {
@@ -65,12 +88,13 @@ function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
 
-//form.addEventListener('submit', function(e) {
-//  e.preventDefault(); //플래시 방지
+form.addEventListener('change', function(e) {
+  e.preventDefault(); //플래시 방지
 
-checkRequired([username, email, password, password2]);
-checkLength(username, 3, 15);
-checkLength(password, 6, 20);
-checkEmail(email);
-checkPasswordsMatch(password, password2);
-//});
+  checkRequired([username, email, password, password2]);
+  checkUsername(username);
+  checkLength(username, 5, 15);
+  checkLength(password, 6, 20);
+  checkEmail(email);
+  checkPasswordsMatch(password, password2);
+});
