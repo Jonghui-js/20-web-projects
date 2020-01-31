@@ -8,4 +8,4 @@
 - This repository is for uploading projects that I implemented by watching udemy course "20 projects with vanilla javascript".
 - I'm going to upload one project a day.
 - at first, I will just follow tutorial. and then I will add some features, function, design, and stuff like that.
-- After doing that, I'm going to implement this 20 projects with javascript framework "react".
+- After the end of this course, I'm going to implement this 20 projects with javascript framework "react" again.
