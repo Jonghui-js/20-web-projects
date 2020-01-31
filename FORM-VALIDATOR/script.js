@@ -91,7 +91,7 @@ function getFieldName(input) {
 form.addEventListener('change', function(e) {
   e.preventDefault(); //플래시 방지
 
-  checkRequired([username, email, password, password2]);
+  //checkRequired([username, email, password, password2]);
   checkUsername(username);
   checkLength(username, 5, 15);
   checkLength(password, 6, 20);
