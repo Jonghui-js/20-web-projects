@@ -1,18 +1,11 @@
-## Form Validator (Intro Project)
+## Udemy course "20 projects with vanilla javascript"
 
-Simple client side form validation. Check requird, length, email and password match
+- Brad Traversy의 강의 "바닐라 자바스크립트로 만드는 20가지 프로젝트"를 수강하면서 만든 것들을 올립니다.
+- 하루에 1가지의 프로젝트를 만드는 것을 목표로 삼았습니다.
+- 우선 그대로 따라한 후에, 몇 가지 기능을 덧붙이여서 커밋합니다.
+- 20가지의 프로젝트를 통해서 바닐라 자바스크립트에 대한 충분한 이해를 바탕으로 리액트로 다시 구현해보는 것을 계획중입니다.
 
-## Project Specifications
-
-- Create form UI
-- Show error messages under specific inputs
-- checkRequired() to accept array of inputs
-- checkLength() to check min and max length
-- checkEmail() to validate email with regex
-- checkPasswordsMatch() to match confirm password
-
-## 내가 변경한 부분
-- 버튼을 누르기전에 유효성 여부를 확인할 수 있도록 함
-- 유저네임에 오직 알파벳만 사용할 수 있는 조건을 추가함.
-- 유저네임과 패스워드의 제한조건을 플레이스홀더에 명시함
-- 기타 색감 조정 등
+- This repository is for uploading projects that I implemented by watching udemy course "20 projects with vanilla javascript".
+- I'm going to upload one project a day.
+- at first, I will just follow tutorial. and then I will add some features, function, design, and stuff like that.
+- After doing that, I'm going to implement this 20 projects with javascript framework "react".
