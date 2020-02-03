@@ -32,12 +32,12 @@ function updateProgress() {
 
   let mins = Math.floor(video.currentTime / 60);
   if (mins < 10) {
-    mins = '0' + String(mins);
+    mins = `0${String(mins)}`;
   }
 
   let secs = Math.floor(video.currentTime % 60);
   if (secs < 10) {
-    secs = '0' + String(secs);
+    secs = `0${String(secs)}`;
   }
 
   timestamp.innerHTML = `${mins}:${secs}`;

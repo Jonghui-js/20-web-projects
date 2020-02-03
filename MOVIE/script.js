@@ -67,6 +67,7 @@ container.addEventListener('click', e => {
     updateSelectedCount();
   }
   //console.log(e.target);
-});
+}); 
+
 
 updateSelectedCount();

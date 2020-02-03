@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #242333;
+  background-color: thistle;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -16,14 +16,19 @@ body {
   margin: 0;
 }
 
-.movie-containter {
+.movie-container {
   margin: 20px 0;
+  align-items: center;
+  justify-content: center;
 }
-
-.movie-containter select {
-  background-color: #fff;
-  border: 0;
-  border-radius: 5px;
+.movie-container label {
+  background-color: tomato;
+  color: black;
+  padding: 4px;
+}
+.movie-container select {
+  background-color: thistle;
+  border: none;
   font-size: 14px;
   margin-left: 10px;
   padding: 5px 15px 5px 15px;
@@ -47,7 +52,7 @@ body {
 }
 
 .seat.selected {
-  background-color: #6feaf6;
+  background-color: darkgreen;
 }
 
 .seat.occupied {
